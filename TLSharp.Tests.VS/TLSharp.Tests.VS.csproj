@@ -63,10 +63,6 @@
       <Project>{400d2544-1cc6-4d8a-a62c-2292d9947a16}</Project>
       <Name>TLSharp.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TLSharp.Tests\TLSharp.Tests.csproj">
-      <Project>{de5c0467-ee99-4734-95f2-eff7a0b99924}</Project>
-      <Name>TLSharp.Tests</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\TLSharp.Tests\app.config">

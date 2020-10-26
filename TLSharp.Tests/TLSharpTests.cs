@@ -137,7 +137,7 @@ namespace TLSharp.Tests
             TLUser user = null;
             try
             {
-                user = await client.MakeAuthAsync(NumberToAuthenticate, hash, code);
+                user = await client.MakeAuthAsync(NumberToAuthenticate, hash.PhoneCodeHash, code);
             }
             catch (CloudPasswordNeededException ex)
             {

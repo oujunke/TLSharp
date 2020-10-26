@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Starksoft.Aspen.Proxy;
+using System;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -22,11 +23,13 @@ namespace TLSharp.Core.Network
             {
                 var ipAddress = IPAddress.Parse(address);
                 var endpoint = new IPEndPoint(ipAddress, port);
-
-                tcpClient = new TcpClient(ipAddress.AddressFamily);
-
+                Socks5ProxyClient socks5ProxyClient = new Socks5ProxyClient("127.0.0.1",1080);
+                //HttpProxyClient httpProxyClient = new HttpProxyClient("127.0.0.1",8888);
+                //tcpClient = new TcpClient(ipAddress.AddressFamily);
                 try {
-                    tcpClient.Connect (endpoint);
+                    //tcpClient.Connect (endpoint);
+                    tcpClient= socks5ProxyClient.CreateConnection(address, port);
+                    //tcpClient = httpProxyClient.CreateConnection(address,port);
                 } catch (Exception ex) {
                     throw new Exception ($"Problem when trying to connect to {endpoint}; either there's no internet connection or the IP address version is not compatible (if the latter, consider using DataCenterIPVersion enum)",
                                          ex);

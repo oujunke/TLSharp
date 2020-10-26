@@ -8,6 +8,7 @@ using TeleSharp.TL;
 namespace TeleSharp.TL.Auth
 {
     [TLObject(-2035355412)]
+    //[TLObject(-1502141361)]
     public class TLRequestSendCode : TLMethod
     {
         public override int Constructor
@@ -15,6 +16,7 @@ namespace TeleSharp.TL.Auth
             get
             {
                 return -2035355412;
+                //return -1502141361;
             }
         }
 
