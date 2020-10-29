@@ -104,7 +104,7 @@ namespace TeleSharp.TL
         }
         public static void Serialize(string src, BinaryWriter writer)
         {
-            BytesUtil.Serialize(Encoding.UTF8.GetBytes(src), writer);
+            BytesUtil.Serialize(Encoding.UTF8.GetBytes(src??string.Empty), writer);
         }
     }
     public class BoolUtil

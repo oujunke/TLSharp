@@ -155,6 +155,7 @@
     <Compile Include="TL\Contacts\TLFound.cs" />
     <Compile Include="TL\Contacts\TLImportedContacts.cs" />
     <Compile Include="TL\Contacts\TLLink.cs" />
+    <Compile Include="TL\Contacts\TLRequestAddContact.cs" />
     <Compile Include="TL\Contacts\TLRequestBlock.cs" />
     <Compile Include="TL\Contacts\TLRequestDeleteContact.cs" />
     <Compile Include="TL\Contacts\TLRequestDeleteContacts.cs" />
@@ -177,6 +178,7 @@
     <Compile Include="TL\Help\TLInviteText.cs" />
     <Compile Include="TL\Help\TLNoAppUpdate.cs" />
     <Compile Include="TL\Help\TLRequestGetAppChangelog.cs" />
+    <Compile Include="TL\Help\TLRequestGetAppConfig.cs" />
     <Compile Include="TL\Help\TLRequestGetAppUpdate.cs" />
     <Compile Include="TL\Help\TLRequestGetCdnConfig.cs" />
     <Compile Include="TL\Help\TLRequestGetConfig.cs" />
@@ -233,6 +235,7 @@
     <Compile Include="TL\Messages\TLRequestDeleteHistory.cs" />
     <Compile Include="TL\Messages\TLRequestDeleteMessages.cs" />
     <Compile Include="TL\Messages\TLRequestDiscardEncryption.cs" />
+    <Compile Include="TL\Messages\TLRequestEditChatAbout.cs" />
     <Compile Include="TL\Messages\TLRequestEditChatAdmin.cs" />
     <Compile Include="TL\Messages\TLRequestEditChatPhoto.cs" />
     <Compile Include="TL\Messages\TLRequestEditChatTitle.cs" />
@@ -252,6 +255,7 @@
     <Compile Include="TL\Messages\TLRequestGetDhConfig.cs" />
     <Compile Include="TL\Messages\TLRequestGetDialogs.cs" />
     <Compile Include="TL\Messages\TLRequestGetDocumentByHash.cs" />
+    <Compile Include="TL\Messages\TLRequestGetEmojiKeywords.cs" />
     <Compile Include="TL\Messages\TLRequestGetFeaturedStickers.cs" />
     <Compile Include="TL\Messages\TLRequestGetFullChat.cs" />
     <Compile Include="TL\Messages\TLRequestGetGameHighScores.cs" />
@@ -381,6 +385,7 @@
     <Compile Include="TL\TLAbsDocument.cs" />
     <Compile Include="TL\TLAbsDocumentAttribute.cs" />
     <Compile Include="TL\TLAbsDraftMessage.cs" />
+    <Compile Include="TL\TLAbsEmojiKeyword.cs" />
     <Compile Include="TL\TLAbsEncryptedChat.cs" />
     <Compile Include="TL\TLAbsEncryptedFile.cs" />
     <Compile Include="TL\TLAbsEncryptedMessage.cs" />
@@ -466,10 +471,12 @@
     <Compile Include="TL\TLChannelParticipantKicked.cs" />
     <Compile Include="TL\TLChannelParticipantModerator.cs" />
     <Compile Include="TL\TLChannelParticipantsAdmins.cs" />
+    <Compile Include="TL\TLChannelParticipantsBanned.cs" />
     <Compile Include="TL\TLChannelParticipantsBots.cs" />
     <Compile Include="TL\TLChannelParticipantSelf.cs" />
     <Compile Include="TL\TLChannelParticipantsKicked.cs" />
     <Compile Include="TL\TLChannelParticipantsRecent.cs" />
+    <Compile Include="TL\TLChannelParticipantsSearch.cs" />
     <Compile Include="TL\TLChannelRoleEditor.cs" />
     <Compile Include="TL\TLChannelRoleEmpty.cs" />
     <Compile Include="TL\TLChannelRoleModerator.cs" />
@@ -511,6 +518,9 @@
     <Compile Include="TL\TLDocumentEmpty.cs" />
     <Compile Include="TL\TLDraftMessage.cs" />
     <Compile Include="TL\TLDraftMessageEmpty.cs" />
+    <Compile Include="TL\TLEmojiKeyword.cs" />
+    <Compile Include="TL\TLEmojiKeywordDeleted.cs" />
+    <Compile Include="TL\TLEmojiKeywordsDifference.cs" />
     <Compile Include="TL\TLEncryptedChat.cs" />
     <Compile Include="TL\TLEncryptedChatDiscarded.cs" />
     <Compile Include="TL\TLEncryptedChatEmpty.cs" />
@@ -522,8 +532,12 @@
     <Compile Include="TL\TLEncryptedMessageService.cs" />
     <Compile Include="TL\TLError.cs" />
     <Compile Include="TL\TLExportedMessageLink.cs" />
+    <Compile Include="TL\TLFileHash.cs" />
     <Compile Include="TL\TLFileLocation.cs" />
+    <Compile Include="TL\TLFileLocationToBeDeprecated.cs" />
     <Compile Include="TL\TLFileLocationUnavailable.cs" />
+    <Compile Include="TL\TLFolder.cs" />
+    <Compile Include="TL\TLFolderPeer.cs" />
     <Compile Include="TL\TLFoundGif.cs" />
     <Compile Include="TL\TLFoundGifCached.cs" />
     <Compile Include="TL\TLGame.cs" />
@@ -876,8 +890,10 @@
     <Compile Include="TL\TLUser.cs" />
     <Compile Include="TL\TLUserEmpty.cs" />
     <Compile Include="TL\TLUserFull.cs" />
+    <Compile Include="TL\TLUserFullNew.cs" />
     <Compile Include="TL\TLUserProfilePhoto.cs" />
     <Compile Include="TL\TLUserProfilePhotoEmpty.cs" />
+    <Compile Include="TL\TLUserProfilePhotoNew.cs" />
     <Compile Include="TL\TLUserStatusEmpty.cs" />
     <Compile Include="TL\TLUserStatusLastMonth.cs" />
     <Compile Include="TL\TLUserStatusLastWeek.cs" />
